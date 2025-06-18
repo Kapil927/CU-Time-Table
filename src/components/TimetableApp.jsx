@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { format } from "date-fns";
 import { Sun, Moon } from "lucide-react";
+import Cookies from "js-cookie";
 
 import { timeTable } from "../assets/data";
 import { days } from "../assets/data";
@@ -42,20 +43,33 @@ const typeColors = {
 export default function TimetableApp() {
   const [selectedDay, setSelectedDay] = useState(getCurrentDay());
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [themeMode, setThemeMode] = useState("light"); // 'light', 'dark', or 'glass'
+
+
+ const [themeMode, setThemeMode] = useState(() => {
+  // Initialize from cookie or default to 'light'
+  const savedTheme = Cookies.get('themeMode');
+  return ['light', 'dark', 'glass'].includes(savedTheme) ? savedTheme : 'light';
+});
+
+// Save to cookie whenever theme changes
+useEffect(() => {
+  Cookies.set('themeMode', themeMode, { expires: 365, sameSite: 'Lax' });
+}, [themeMode]);
 
   useEffect(() => {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
 
-  const toggleTheme = () => {
-    setThemeMode(prev => {
-      if (prev === "light") return "dark";
-      if (prev === "dark") return "glass";
-      return "light";
-    });
-  };
+const toggleTheme = () => {
+  setThemeMode(prev => {
+    switch(prev) {
+      case 'light': return 'dark';
+      case 'dark': return 'glass';
+      default: return 'light';
+    }
+  });
+};
 
   const lectures = timeTable[selectedDay]?.lectures || [];
   const sortedLectures = [...lectures].sort((a, b) => parseTime(a.from) - parseTime(b.from));

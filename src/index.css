@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+.particles-canvas {
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+
+#tsparticles {
+  background-color: transparent !important;
+}
+
 /* === Body & Layout === */
 html, body, #root {
   height: 100%;

@@ -1,10 +1,15 @@
-import React, { useEffect, useState } from "react";
+import  React,{ useEffect, useState, memo, useMemo, useCallback } from "react";
 import { format } from "date-fns";
 import { Sun, Moon } from "lucide-react";
 import Cookies from "js-cookie";
+import { loadFull } from "tsparticles";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim"; // Using slim package for better performance
 
 import { timeTable } from "../assets/data";
 import { days } from "../assets/data";
+import { ParticlesBackground } from "./ParticlesBackground";
+
 
 const getCurrentDay = () => {
   const today = new Date();
@@ -71,6 +76,7 @@ const toggleTheme = () => {
   });
 };
 
+
   const lectures = timeTable[selectedDay]?.lectures || [];
   const sortedLectures = [...lectures].sort((a, b) => parseTime(a.from) - parseTime(b.from));
   const nowMinutes = currentTime.getHours() * 60 + currentTime.getMinutes();
@@ -89,13 +95,19 @@ const toggleTheme = () => {
   return (
     <div className={`flex flex-col gap-3 min-h-screen p-4 font-sans transition-colors duration-300 ${
       themeMode === "dark" 
-        ? "bg-gradient-to-br from-zinc-900 to-black text-white bg-[url(https://windowscustomization.com/wp-content/uploads/2018/10/particles.gif)]"  //DARK BG
+        ? "bg-zinc-900 text-white relative overflow-hidden" 
         : themeMode === "glass" 
-          ? "bg-gradient-to-br from-blue-50/20 to-purple-50/20 backdrop-blur-sm bg-cover bg-[url(https://wallpapers-clan.com/wp-content/uploads/2024/03/starfall-night-sky-mountains-aesthetic-gif-cover-desktop-wallpaper.gif)]" //TRANSPARENT BG
-          : "bg-white text-zinc-900 sm:bg-cover bg-[url(https://i.makeagif.com/media/1-13-2023/_3qu79.gif)]" //WHITE BG
-
-
+          ? "bg-gradient-to-br from-blue-50/20 to-purple-50/20 backdrop-blur-sm bg-cover bg-[url(https://wallpapers-clan.com/wp-content/uploads/2024/03/starfall-night-sky-mountains-aesthetic-gif-cover-desktop-wallpaper.gif)]" 
+          : "bg-white text-zinc-900 sm:bg-cover bg-[url(https://i.makeagif.com/media/1-13-2023/_3qu79.gif)]"
     }`}>
+      
+       {/* particle background :- */}
+      {themeMode === "dark" && (
+        <div key="particles" className="fixed ">    
+          <ParticlesBackground />
+        </div>
+      )}
+
       {/* Header */}
       <header className={`flex flex-row justify-between items-center gap-4 md:gap-0 mb-6 p-6 rounded-3xl shadow-lg border transition-all ${
         themeMode === "dark" 

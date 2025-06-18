@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 import { loadSlim } from "tsparticles-slim"; 
 
 export const ParticlesBackground = () => {
-const particlesInit = useCallback(async (engine) => {
+  const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
 

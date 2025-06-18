@@ -2,9 +2,6 @@ import  React,{ useEffect, useState, memo, useMemo, useCallback } from "react";
 import { format } from "date-fns";
 import { Sun, Moon } from "lucide-react";
 import Cookies from "js-cookie";
-import { loadFull } from "tsparticles";
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // Using slim package for better performance
 
 import { timeTable } from "../assets/data";
 import { days } from "../assets/data";
@@ -76,7 +73,6 @@ const toggleTheme = () => {
   });
 };
 
-
   const lectures = timeTable[selectedDay]?.lectures || [];
   const sortedLectures = [...lectures].sort((a, b) => parseTime(a.from) - parseTime(b.from));
   const nowMinutes = currentTime.getHours() * 60 + currentTime.getMinutes();
@@ -91,6 +87,10 @@ const toggleTheme = () => {
     ? sortedLectures.find((lec) => parseTime(lec.from) > nowMinutes)
     : null;
 
+     const isLectureOver = (lecture) => {
+    return isToday && nowMinutes > parseTime(lecture.till);
+  };
+
 // pending : create components out of this follow good practice, to save time i did't do. 
   return (
     <div className={`flex flex-col gap-3 min-h-screen p-4 font-sans transition-colors duration-300 ${
@@ -103,7 +103,7 @@ const toggleTheme = () => {
       
        {/* particle background :- */}
       {themeMode === "dark" && (
-        <div key="particles" className="fixed ">    
+        <div key="particles" className="fixed">    
           <ParticlesBackground />
         </div>
       )}
@@ -206,7 +206,7 @@ const toggleTheme = () => {
               return (
                 <tr
                   key={i}
-                  className={`border-b text-center ${
+                  className={`border-b text-centerc card-shine-effect ${
                     themeMode === "dark" ? "border-zinc-700" : "border-gray-200"
                   } ${
                     isCurrent
@@ -285,7 +285,7 @@ const toggleTheme = () => {
       </div>
 
       {/* Mobile View */}
-      <div className={`md:hidden flex flex-col divide-y px-5 gap-2 ${
+      <div className={`md:hidden flex flex-col divide-y px-5 gap-3 ${
         themeMode === "dark" ? "divide-zinc-700" : "divide-gray-200"
       }`}>
         {sortedLectures.map((lec, i) => {
@@ -300,31 +300,32 @@ const toggleTheme = () => {
           return (
             <div
               key={i}
-              className={`rounded-xl p-4 transition-all ${
-                isCurrent
-                  ? themeMode === "dark"
-                    ? "bg-yellow-800/30"
-                    : themeMode === "glass"
-                    ? "bg-yellow-200/40 backdrop-blur-md"
-                    : "bg-yellow-200/70"
-                  : isUpcoming
-                  ? themeMode === "dark"
-                    ? "bg-zinc-700"
-                    : themeMode === "glass"
-                    ? "bg-white/30 backdrop-blur-md"
-                    : "bg-gray-200"
-                  : themeMode === "dark"
-                  ? "bg-zinc-800 text-white"
-                  : themeMode === "glass"
-                  ? "bg-white/20 text-zinc-900 backdrop-blur-md"
-                  : "bg-white text-zinc-900"
+              className={`rounded-xl p-4 transition-all card-shine-effect ${
+                   isCurrent
+      ? themeMode === "dark"
+        ? "bg-yellow-800/30"
+        : themeMode === "glass"
+        ? "bg-yellow-200/40 backdrop-blur-md"
+        : "bg-yellow-200/70"
+      : isUpcoming
+      ? themeMode === "dark"
+        ? "bg-zinc-700"
+        : themeMode === "glass"
+        ? "bg-white/30 backdrop-blur-md"
+        : "bg-gray-200"
+      : themeMode === "dark"
+      ? "bg-zinc-800 text-white"
+      : themeMode === "glass"
+      ? "bg-white/20 text-zinc-900 backdrop-blur-md"
+      : "bg-transparent backdrop-blur-none text-zinc-900"
+                  
               }`}
             >
               <div className="flex justify-between items-center">
                 <div className={`font-semibold ${
                   themeMode === "dark" ? "text-blue-400" : "text-blue-600"
                 }`}>
-                  {lec.from} - {lec.till}
+                  ⌛ {lec.from} - {lec.till}
                 </div>
                 <div className="flex flex-col items-end translate-x-[-6px]">
                   <span className={`text-xs ${
@@ -335,25 +336,39 @@ const toggleTheme = () => {
                   {isCurrent && (
                     <span className="text-xs text-red-600 animate-pulse">LIVE</span>
                   )}
+    {isLectureOver(lec) && (
+      <span className="ml-2 text-red-500 text-xs font-bold">OVER</span>
+    )}                  
+
+                  
                 </div>
               </div>
               <div className="flex items-baseline gap-1">
                 <div className={`text-lg font-bold ${
                   themeMode === "dark" ? "text-white" : "text-zinc-800"
                 }`}>
-                  {lec.subject}
+                  📚 {lec.subject}
                 </div>
-                <div className={`text-xs ${
-                  themeMode === "dark" ? "text-gray-400" : "text-gray-500"
-                } mb-2`}>
+                <div className={`text-xs mb-2 
+                  ${themeMode === "dark" && "text-gray-400"}
+                  ${themeMode === "light" && "text-gray-500"}
+                  ${themeMode === "glass" && "text-black"}
+                  `}>
                   {lec.subjectCode}
                 </div>
               </div>
               <div className="text-sm">
-                <strong>📍Block/Room:</strong> {lec.blockNo} / {lec.roomNo}
+                <strong>📍 Block/Room:</strong> {lec.blockNo} / {lec.roomNo}
               </div>
               <div className="text-sm">
-                <strong>👤Instructor:</strong> {lec.instructor} ({lec.eid})
+               <strong>👤 Instructor:</strong> {lec.instructor} 
+                               <span className={`text-xs
+                  ${themeMode === "dark" && "text-gray-400"}
+                  ${themeMode === "light" && "text-gray-500"}
+                  ${themeMode === "glass" && "text-black"}
+                } mb-2`}>
+                   ({lec.eid})
+                </span> 
               </div>
               {isCurrent && (
                 <div className={`mt-2 text-sm font-medium ${

@@ -238,6 +238,9 @@ const toggleTheme = () => {
                       <div className="flex gap-2">
                         <span className={`text-xs ${typeColors[lec.type] || "text-gray-400"}`}>
                           {lec.type}
+                          {isLectureOver(lec) && (
+                            <span className="ml-2 text-red-500 text-xs"> OVER</span>
+                          )}                              
                         </span>
                         {isCurrent && (
                           <span className="relative flex h-2 w-2 translate-y-[2px]">
@@ -337,7 +340,7 @@ const toggleTheme = () => {
                     <span className="text-xs text-red-600 animate-pulse">LIVE</span>
                   )}
     {isLectureOver(lec) && (
-      <span className="ml-2 text-red-500 text-xs font-bold">OVER</span>
+      <span className="ml-2 text-red-500 text-xs ">OVER</span>
     )}                  
 
                   

@@ -2,235 +2,411 @@ export const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sa
 
 export const timeTable = {
   Monday: {
-    totalLectures: 4,
+    totalLectures: 7,
     lectures: [
       {
-        subject: "Mathematics",
-        subjectCode: "MATH101",
-        from: "09:00 AM",
-        till: "10:00 AM",
-        instructor: "Dr. A. Kumar",
-        eid: "E001",
+        subject: "Computer Networks",
+        subjectCode: "23CST-302",
+        from: "09:30 AM",
+        till: "10:20 AM",
+        instructor: "Gurleen Kaur",
+        eid: "E12255",
         type: "Lecture",
-        blockNo: "B1",
-        roomNo: "101"
+        blockNo: "B2",
+        roomNo: "108"
       },
       {
-        subject: "Physics",
-        subjectCode: "PHY102",
-        from: "10:15 AM",
-        till: "11:15 AM",
-        instructor: "Prof. B. Sharma",
-        eid: "E002",
-        type: "Lecture",
-        blockNo: "B1",
-        roomNo: "102"
+        subject: "Full Stack-I",
+        subjectCode: "23CSP-339",
+        from: "10:20 AM",
+        till: "11:10 AM",
+        instructor: "Sumit Malhotra",
+        eid: "E7822",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
       },
       {
-        subject: "English",
-        subjectCode: "ENG103",
-        from: "11:30 AM",
-        till: "12:30 PM",
-        instructor: "Ms. C. Verma",
-        eid: "E003",
+        subject: "Full Stack-I",
+        subjectCode: "23CSP-339",
+        from: "11:20 AM",
+        till: "12:10 PM",
+        instructor: "Sumit Malhotra",
+        eid: "E7822",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
+        from: "01:05 PM",
+        till: "01:55 PM",
+        instructor: "Babita Sharma",
+        eid: "E15545",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
+        from: "01:55 PM",
+        till: "02:45 PM",
+        instructor: "Babita Sharma",
+        eid: "E15545",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Aptitude-III",
+        subjectCode: "23TDT-312",
+        from: "02:45 PM",
+        till: "03:35 PM",
+        instructor: "Rajat Kumar Modgil",
+        eid: "E16688",
         type: "Tutorial",
         blockNo: "B2",
-        roomNo: "203"
+        roomNo: "108"
       },
       {
-        subject: "Computer Science",
-        subjectCode: "CS104",
-        from: "01:30 PM",
-        till: "02:30 PM",
-        instructor: "Mr. D. Singh",
-        eid: "E004",
-        type: "Practical",
-        blockNo: "Lab Block",
-        roomNo: "Lab-1"
+        subject: "Aptitude-III",
+        subjectCode: "23TDT-312",
+        from: "03:35 PM",
+        till: "04:25 PM",
+        instructor: "Rajat Kumar Modgil",
+        eid: "E16688",
+        type: "Tutorial",
+        blockNo: "B2",
+        roomNo: "108"
       }
     ]
   },
 
   Tuesday: {
-    totalLectures: 3,
+    totalLectures: 7,
     lectures: [
       {
-        subject: "Chemistry",
-        subjectCode: "CHEM105",
-        from: "09:00 AM",
-        till: "10:00 AM",
-        instructor: "Dr. E. Khan",
-        eid: "E005",
-        type: "Lecture",
-        blockNo: "B1",
-        roomNo: "103"
-      },
-      {
-        subject: "Mathematics",
-        subjectCode: "MATH101",
-        from: "10:15 AM",
-        till: "08:15 PM",
-        instructor: "Dr. A. Kumar",
-        eid: "E006",
-        type: "Tutorial",
+        subject: "Competitive Coding-I",
+        subjectCode: "23CSP-332",
+        from: "09:30 AM",
+        till: "10:20 AM",
+        instructor: "Madhu Kumari",
+        eid: "E18626",
+        type: "Practical",
         blockNo: "B2",
-        roomNo: "204"
+        roomNo: "108"
       },
       {
-        subject: "Environmental Science",
-        subjectCode: "EVS106",
-        from: "11:30 PM",
-        till: "10:30 PM",
-        instructor: "Ms. F. Mehta",
-        eid: "E007",
+        subject: "Competitive Coding-I",
+        subjectCode: "23CSP-332",
+        from: "10:20 AM",
+        till: "11:10 AM",
+        instructor: "Madhu Kumari",
+        eid: "E18626",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Computer Networks",
+        subjectCode: "23CST-302",
+        from: "11:20 AM",
+        till: "12:10 PM",
+        instructor: "Gurleen Kaur",
+        eid: "E12255",
         type: "Lecture",
-        blockNo: "B3",
-        roomNo: "305"
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Soft Skills-III",
+        subjectCode: "23TDP-311",
+        from: "01:05 PM",
+        till: "01:55 PM",
+        instructor: "Divya Gupta",
+        eid: "E16633",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "107"
+      },
+      {
+        subject: "Soft Skills-III",
+        subjectCode: "23TDP-311",
+        from: "01:55 PM",
+        till: "02:45 PM",
+        instructor: "Divya Gupta",
+        eid: "E16633",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "107"
+      },
+      {
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
+        from: "02:45 PM",
+        till: "03:35 PM",
+        instructor: "Ankita Thakur",
+        eid: "E18488",
+        type: "Lecture",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
+        from: "03:35 PM",
+        till: "04:25 PM",
+        instructor: "Kapil",
+        eid: "E18497",
+        type: "Lecture",
+        blockNo: "B2",
+        roomNo: "108"
       }
     ]
   },
 
   Wednesday: {
-    totalLectures: 2,
+    totalLectures: 5,
     lectures: [
       {
-        subject: "Physics Lab",
-        subjectCode: "PHY102L",
-        from: "09:00 PM",
-        till: "11:00 PM",
-        instructor: "Lab Asst. G. Iyer",
-        eid: "E008",
+        subject: "Full Stack-I",
+        subjectCode: "23CSP-339",
+        from: "09:30 AM",
+        till: "10:20 AM",
+        instructor: "Sumit Malhotra",
+        eid: "E7822",
         type: "Practical",
-        blockNo: "Lab Block",
-        roomNo: "Lab-3"
+        blockNo: "B2",
+        roomNo: "108"
       },
       {
-        subject: "English",
-        subjectCode: "ENG103",
-        from: "11:15 AM",
-        till: "08:15 PM",
-        instructor: "Ms. C. Verma",
-        eid: "E009",
+        subject: "Full Stack-I",
+        subjectCode: "23CSP-339",
+        from: "10:20 AM",
+        till: "11:10 AM",
+        instructor: "Sumit Malhotra",
+        eid: "E7822",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
+        from: "11:20 AM",
+        till: "12:10 PM",
+        instructor: "Ankita Thakur",
+        eid: "E18488",
         type: "Lecture",
         blockNo: "B2",
-        roomNo: "205"
+        roomNo: "108"
+      },
+      {
+        subject: "Operating System",
+        subjectCode: "23CST-303",
+        from: "12:10 PM",
+        till: "01:00 PM",
+        instructor: "Bandan Jot Kaur",
+        eid: "E17353",
+        type: "Lecture",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
+        from: "01:55 PM",
+        till: "02:45 PM",
+        instructor: "Kapil",
+        eid: "E18497",
+        type: "Lecture",
+        blockNo: "B2",
+        roomNo: "108"
       }
     ]
   },
 
   Thursday: {
-    totalLectures: 4,
+    totalLectures: 7,
     lectures: [
       {
-        subject: "Mathematics",
-        subjectCode: "MATH101",
-        from: "09:00 AM",
-        till: "10:00 AM",
-        instructor: "Dr. A. Kumar",
-        eid: "E010",
+        subject: "Operating System",
+        subjectCode: "23CST-303",
+        from: "09:30 AM",
+        till: "10:20 AM",
+        instructor: "Bandan Jot Kaur",
+        eid: "E17353",
         type: "Lecture",
-        blockNo: "B1",
-        roomNo: "101"
-      },
-      {
-        subject: "Chemistry",
-        subjectCode: "CHEM105",
-        from: "10:15 AM",
-        till: "11:15 AM",
-        instructor: "Dr. E. Khan",
-        eid: "E011",
-        type: "Lecture",
-        blockNo: "B1",
-        roomNo: "103"
-      },
-      {
-        subject: "Computer Science",
-        subjectCode: "CS104",
-        from: "11:30 AM",
-        till: "12:30 PM",
-        instructor: "Mr. D. Singh",
-        eid: "E012",
-        type: "Tutorial",
         blockNo: "B2",
-        roomNo: "206"
+        roomNo: "108"
       },
       {
-        subject: "Environmental Science",
-        subjectCode: "EVS106",
-        from: "01:30 PM",
-        till: "02:30 PM",
-        instructor: "Ms. F. Mehta",
-        eid: "E013",
+        subject: "Computer Networks",
+        subjectCode: "23CST-302",
+        from: "10:20 AM",
+        till: "11:10 AM",
+        instructor: "Gurleen Kaur",
+        eid: "E12255",
         type: "Lecture",
-        blockNo: "B3",
-        roomNo: "306"
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
+        from: "11:20 AM",
+        till: "12:10 PM",
+        instructor: "Ankita Thakur",
+        eid: "E18488",
+        type: "Lecture",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
+        from: "01:05 PM",
+        till: "01:55 PM",
+        instructor: "Ramakant Singh",
+        eid: "E18525",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
+        from: "01:55 PM",
+        till: "02:45 PM",
+        instructor: "Ramakant Singh",
+        eid: "E18525",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Soft Skills-III",
+        subjectCode: "23TDP-311",
+        from: "02:45 PM",
+        till: "03:35 PM",
+        instructor: "Divya Gupta",
+        eid: "E16633",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "107"
+      },
+      {
+        subject: "Soft Skills-III",
+        subjectCode: "23TDP-311",
+        from: "03:35 PM",
+        till: "04:25 PM",
+        instructor: "Divya Gupta",
+        eid: "E16633",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "107"
       }
     ]
   },
 
   Friday: {
-    totalLectures: 3,
+    totalLectures: 7,
     lectures: [
       {
-        subject: "Computer Science",
-        subjectCode: "CS104",
-        from: "09:00 AM",
-        till: "10:00 AM",
-        instructor: "Mr. D. Singh",
-        eid: "E014",
-        type: "Lecture",
-        blockNo: "B1",
-        roomNo: "104"
+        subject: "ADBMS",
+        subjectCode: "23CSP-333",
+        from: "09:30 AM",
+        till: "10:20 AM",
+        instructor: "Disha Sharma",
+        eid: "E13241",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
       },
       {
-        subject: "Physics",
-        subjectCode: "PHY102",
-        from: "10:15 AM",
-        till: "11:15 AM",
-        instructor: "Prof. B. Sharma",
-        eid: "E015",
+        subject: "ADBMS",
+        subjectCode: "23CSP-333",
+        from: "10:20 AM",
+        till: "11:10 AM",
+        instructor: "Disha Sharma",
+        eid: "E13241",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Competitive Coding-I",
+        subjectCode: "23CSP-332",
+        from: "11:20 AM",
+        till: "12:10 PM",
+        instructor: "Madhu Kumari",
+        eid: "E18626",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Competitive Coding-I",
+        subjectCode: "23CSP-332",
+        from: "12:10 PM",
+        till: "01:00 PM",
+        instructor: "Madhu Kumari",
+        eid: "E18626",
+        type: "Practical",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Operating System",
+        subjectCode: "23CST-303",
+        from: "01:55 PM",
+        till: "02:45 PM",
+        instructor: "Bandan Jot Kaur",
+        eid: "E17353",
+        type: "Lecture",
+        blockNo: "B2",
+        roomNo: "108"
+      },
+      {
+        subject: "Aptitude-III",
+        subjectCode: "23TDT-312",
+        from: "02:45 PM",
+        till: "03:35 PM",
+        instructor: "Rajat Kumar Modgil",
+        eid: "E16688",
         type: "Tutorial",
         blockNo: "B2",
-        roomNo: "207"
+        roomNo: "108"
       },
       {
-        subject: "Mathematics",
-        subjectCode: "MATH101",
-        from: "11:30 AM",
-        till: "12:30 PM",
-        instructor: "Dr. A. Kumar",
-        eid: "E016",
-        type: "Lecture",
-        blockNo: "B1",
-        roomNo: "101"
+        subject: "Aptitude-III",
+        subjectCode: "23TDT-312",
+        from: "03:35 PM",
+        till: "04:25 PM",
+        instructor: "Rajat Kumar Modgil",
+        eid: "E16688",
+        type: "Tutorial",
+        blockNo: "B2",
+        roomNo: "108"
       }
     ]
   },
 
   Saturday: {
-    totalLectures: 2,
+    totalLectures: 1,
     lectures: [
       {
-        subject: "English",
-        subjectCode: "ENG103",
-        from: "09:00 AM",
-        till: "10:00 AM",
-        instructor: "Ms. C. Verma",
-        eid: "E017",
-        type: "Tutorial",
-        blockNo: "B2",
-        roomNo: "208"
-      },
-      {
-        subject: "Workshop",
-        subjectCode: "WS107",
-        from: "10:15 AM",
-        till: "12:15 PM",
-        instructor: "Mr. H. Rao",
-        eid: "E018",
+        subject: "Institute/Industrial Summer Training",
+        subjectCode: "23CSI-301",
+        from: "12:10 PM",
+        till: "01:00 PM",
+        instructor: null,
+        eid: null,
         type: "Practical",
-        blockNo: "Workshop Block",
-        roomNo: "W-1"
+        blockNo: "B2",
+        roomNo: "108"
       }
     ]
   },

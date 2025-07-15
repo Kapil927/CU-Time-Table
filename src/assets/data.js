@@ -10,6 +10,7 @@ export const timeTable = {
         from: "09:30 AM",
         till: "10:20 AM",
         instructor: "Prashant Ahluwalia",
+        eid: "E5026",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -20,6 +21,7 @@ export const timeTable = {
         from: "10:20 AM",
         till: "11:10 AM",
         instructor: "Ameena Nazz",
+        eid: "E13481",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -30,6 +32,7 @@ export const timeTable = {
         from: "11:20 AM",
         till: "12:10 PM",
         instructor: "Neeraj Kumar",
+        eid: "E16783",
         type: "Practical",
         blockNo: "B4",
         roomNo: "905"
@@ -40,6 +43,7 @@ export const timeTable = {
         from: "12:10 PM",
         till: "01:00 PM",
         instructor: "Neeraj Kumar",
+        eid: "E16783",
         type: "Practical",
         blockNo: "B4",
         roomNo: "905"
@@ -50,6 +54,7 @@ export const timeTable = {
         from: "01:55 PM",
         till: "02:45 PM",
         instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -60,6 +65,7 @@ export const timeTable = {
         from: "02:45 PM",
         till: "03:35 PM",
         instructor: "Vishal Kumar",
+        eid: "E18147",
         type: "Practical",
         blockNo: "B4",
         roomNo: "905"
@@ -70,6 +76,7 @@ export const timeTable = {
         from: "03:35 PM",
         till: "04:25 PM",
         instructor: "Vishal Kumar",
+        eid: "E18147",
         type: "Practical",
         blockNo: "B4",
         roomNo: "905"
@@ -86,6 +93,7 @@ export const timeTable = {
         from: "09:30 AM",
         till: "10:20 AM",
         instructor: "Vishal Kumar",
+        eid: "E18147",
         type: "Practical",
         blockNo: "B4",
         roomNo: "912"
@@ -96,6 +104,7 @@ export const timeTable = {
         from: "10:20 AM",
         till: "11:10 AM",
         instructor: "Vishal Kumar",
+        eid: "E18147",
         type: "Practical",
         blockNo: "B4",
         roomNo: "912"
@@ -106,6 +115,7 @@ export const timeTable = {
         from: "11:20 AM",
         till: "12:10 PM",
         instructor: "Ameena Nazz",
+        eid: "E13481",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -116,6 +126,7 @@ export const timeTable = {
         from: "01:05 PM",
         till: "01:55 PM",
         instructor: "Prashant Ahluwalia",
+        eid: "E5026",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -126,6 +137,7 @@ export const timeTable = {
         from: "01:55 PM",
         till: "02:45 PM",
         instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -136,6 +148,7 @@ export const timeTable = {
         from: "02:45 PM",
         till: "03:35 PM",
         instructor: "Manphool Singh",
+        eid: "E17982",
         type: "Tutorial",
         blockNo: "B4",
         roomNo: "908"
@@ -146,6 +159,7 @@ export const timeTable = {
         from: "03:35 PM",
         till: "04:25 PM",
         instructor: "Manphool Singh",
+        eid: "E17982",
         type: "Tutorial",
         blockNo: "B4",
         roomNo: "908"
@@ -162,6 +176,7 @@ export const timeTable = {
         from: "09:30 AM",
         till: "10:20 AM",
         instructor: "Mayank Sharma",
+        eid: "E18387",
         type: "Practical",
         blockNo: "B4",
         roomNo: "905"
@@ -172,6 +187,7 @@ export const timeTable = {
         from: "10:20 AM",
         till: "11:10 AM",
         instructor: "Mayank Sharma",
+        eid: "E18387",
         type: "Practical",
         blockNo: "B4",
         roomNo: "905"
@@ -182,6 +198,7 @@ export const timeTable = {
         from: "11:20 AM",
         till: "12:10 PM",
         instructor: "Prashant Ahluwalia",
+        eid: "E5026",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -192,6 +209,7 @@ export const timeTable = {
         from: "02:45 PM",
         till: "03:35 PM",
         instructor: "Ankita Sharma",
+        eid: "E6204",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -202,6 +220,7 @@ export const timeTable = {
         from: "03:35 PM",
         till: "04:25 PM",
         instructor: "Ameena Nazz",
+        eid: "E13481",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -218,6 +237,7 @@ export const timeTable = {
         from: "09:30 AM",
         till: "10:20 AM",
         instructor: "Amit Sharma",
+        eid: "E18718",
         type: "Practical",
         blockNo: "B4",
         roomNo: "705"
@@ -228,6 +248,7 @@ export const timeTable = {
         from: "10:20 AM",
         till: "11:10 AM",
         instructor: "Amit Sharma",
+        eid: "E18718",
         type: "Practical",
         blockNo: "B4",
         roomNo: "705"
@@ -238,6 +259,7 @@ export const timeTable = {
         from: "11:20 AM",
         till: "12:10 PM",
         instructor: "Mayank Sharma",
+        eid: "E18387",
         type: "Practical",
         blockNo: "B4",
         roomNo: "912-A"
@@ -248,6 +270,7 @@ export const timeTable = {
         from: "12:10 PM",
         till: "01:00 PM",
         instructor: "Mayank Sharma",
+        eid: "E18387",
         type: "Practical",
         blockNo: "B4",
         roomNo: "912-A"
@@ -258,6 +281,7 @@ export const timeTable = {
         from: "01:55 PM",
         till: "02:45 PM",
         instructor: "Ankita Sharma",
+        eid: "E6204",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -268,6 +292,7 @@ export const timeTable = {
         from: "02:45 PM",
         till: "03:35 PM",
         instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Practical",
         blockNo: "B4",
         roomNo: "918"
@@ -278,6 +303,7 @@ export const timeTable = {
         from: "03:35 PM",
         till: "04:25 PM",
         instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Practical",
         blockNo: "B4",
         roomNo: "918"
@@ -294,6 +320,7 @@ export const timeTable = {
         from: "09:30 AM",
         till: "10:20 AM",
         instructor: "Amit Sharma",
+        eid: "E18718",
         type: "Practical",
         blockNo: "B4",
         roomNo: "705"
@@ -304,6 +331,7 @@ export const timeTable = {
         from: "10:20 AM",
         till: "11:10 AM",
         instructor: "Amit Sharma",
+        eid: "E18718",
         type: "Practical",
         blockNo: "B4",
         roomNo: "705"
@@ -314,6 +342,7 @@ export const timeTable = {
         from: "11:20 AM",
         till: "12:10 PM",
         instructor: "Ankita Sharma",
+        eid: "E6204",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -324,6 +353,7 @@ export const timeTable = {
         from: "01:05 PM",
         till: "01:55 PM",
         instructor: "Girish Dilip Chitte",
+        eid: "E18861",
         type: "Practical",
         blockNo: "B4",
         roomNo: "911"
@@ -334,6 +364,7 @@ export const timeTable = {
         from: "01:55 PM",
         till: "02:45 PM",
         instructor: "Girish Dilip Chitte",
+        eid: "E18861",
         type: "Practical",
         blockNo: "B4",
         roomNo: "911"
@@ -344,6 +375,7 @@ export const timeTable = {
         from: "02:45 PM",
         till: "03:35 PM",
         instructor: "Manphool Singh",
+        eid: "E17982",
         type: "Tutorial",
         blockNo: "B4",
         roomNo: "908"
@@ -354,6 +386,7 @@ export const timeTable = {
         from: "03:35 PM",
         till: "04:25 PM",
         instructor: "Manphool Singh",
+        eid: "E17982",
         type: "Tutorial",
         blockNo: "B4",
         roomNo: "908"
@@ -370,6 +403,7 @@ export const timeTable = {
         from: "01:55 PM",
         till: "02:45 PM",
         instructor: null,
+        eid: null,
         type: "Practical",
         blockNo: "B4",
         roomNo: "900"
@@ -382,4 +416,3 @@ export const timeTable = {
     lectures: []
   }
 };
-

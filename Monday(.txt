@@ -1,0 +1,214 @@
+Monday(
+
+09:30 - 10:20 AM 
+Lecture
+23CST-303
+Block-B4-908
+Prashant Ahluwalia(E5026)
+
+10:20 - 11:10 AM
+Lecture
+23CSH-301
+Block-B4-908
+Ameena Nazz(E13481)
+
+11:20 - 12:10 PM 
+Practical
+23CSH-301 Block-B4-905
+Neeraj Kumar(E16783)
+
+12:10 - 1:00 PM 
+Practical
+23CSH-301
+Block-B4-905
+Neeraj Kumar(E16783)
+
+1:55 - 2:45 PM 
+Lecture
+23CSH-304 Block-B4-908
+Kusum Lata(E17456)
+
+2:45 - 3:35 PM
+Practical
+23CSP-332
+Block-B4-905
+Vishal Kumar(E18147)
+
+3:35 - 4:25 PM 
+Practical
+23CSP-332
+Block-B4-905
+Vishal Kumar(E18147)
+
+)
+
+Tuesday(
+
+09:30 - 10:20 AM
+Practical
+23CSP-332 Block-B4-912
+Vishal Kumar(E18147)
+
+10:20 - 11:10 AM
+Practical
+23CSP-332 Block-B4-912
+Vishal Kumar(E18147)
+
+11:20 - 12:10 PM 
+Lecture
+23CSH-301
+Block-B4-908
+Ameena Nazz(E13481)
+
+1:05 - 1:55 PM 
+Lecture
+23CST-303
+Block-B4-908
+Prashant Ahluwalia(E5026)
+
+1:55 - 2:45 PM 
+Lecture
+23CSH-304
+Block-B4-908
+Kusum Lata(E17456)
+
+2:45 - 3:35 PM
+Tutorial
+23TDT-312
+Block-B4-908
+Manphool Singh(E17982)
+
+3:35 - 4:25 PM
+Tutorial
+23TDT-312
+Block-B4-908
+Manphool Singh(E17982)
+
+)
+
+
+Wednesday(
+
+09:30 - 10:20 AM 
+Practical
+23CSP-339 Block-B4-905
+Mayank Sharma(E18387)
+
+10:20 - 11:10 AM
+Practical
+23CSP-339
+Block-B4-905
+Mayank Sharma(E18387)
+
+11:20 - 12:10 PM 
+Lecture
+23CST-303
+Block-B4-908
+Prashant Ahluwalia(E5026)
+
+2:45 - 3:35 PM 
+Lecture
+23CST-302 Block-B4-908
+Ankita Sharma(E6204)
+
+3:35 - 4:25 PM 
+Lecture
+23CSH-301
+Block-B4-908
+Ameena Nazz(E13481)
+
+)
+
+Thursday(
+
+09:30 - 10:20 AM
+Practical
+23TDP-311 Block-B4-705
+Amit Sharma(E18718)
+
+10:20 - 11:10 AM
+Practical
+23TDP-311
+Block-B4-705
+Amit Sharma(E18718)
+
+11:20 - 12:10 PM 
+Practical
+23CSP-339
+Block-B4-912-A
+Mayank Sharma(E18387)
+
+12:10 - 1:00 PM 
+Practical
+23CSP-339
+Block-B4-912-A
+Mayank Sharma(E18387)
+
+1:55 - 2:45 PM 
+Lecture
+23CST-302 Block-B4-908
+Ankita Sharma(E6204)
+
+2:45 - 3:35 PM
+Practical
+23CSH-304
+Block-B4-918 Kusum Lata(E17456)
+
+3:35 - 4:25 PM 
+Practical
+23CSH-304
+Block-B4-918
+Kusum Lata(E17456)
+
+)
+
+Friday(
+
+09:30 - 10:20 AM
+Practical
+23TDP-311 Block-B4-705
+Amit Sharma(E18718)
+
+10:20 - 11:10 AM
+Practical
+23TDP-311 Block-B4-705
+Amit Sharma(E18718)
+
+11:20 - 12:10 PM 
+Lecture
+23CST-302 Block-B4-908
+Ankita Sharma(E6204)
+
+1:05 - 1:55 PM 
+Practical
+23CSP-333
+Block-B4-911
+Girish Dilip Chitte(E18861)
+
+1:55 - 2:45 PM 
+Practical
+23CSP-333 Block-B4-911
+Girish Dilip Chitte(E18861)
+
+2:45 - 3:35 PM
+Tutorial
+23TDT-312
+Block-B4-908
+Manphool Singh(E17982)
+
+3:35 - 4:25 PM
+Tutorial
+23TDT-312
+Block-B4-908
+Manphool Singh(E17982)
+
+)
+
+Saturday(
+
+23CSI-301
+1:55 - 2:45 PM 
+Practical
+Block-B4-900
+
+)

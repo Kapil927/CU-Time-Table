@@ -1,11 +1,11 @@
-import  React,{ useEffect, useState, memo, useMemo, useCallback } from "react";
-import { format } from "date-fns";
+import React, { useEffect, useState } from "react";
 import { Sun, Moon } from "lucide-react";
 import Cookies from "js-cookie";
 
 import { timeTable } from "../assets/data";
 import { days } from "../assets/data";
 import { ParticlesBackground } from "./ParticlesBackground";
+
 
 // Simple cookie functions (replacement for js-cookie)
 const setCookie = (name, value, days = 365) => {
@@ -207,7 +207,7 @@ export default function TimetableApp() {
   };
 
   return (
-    <div className={`flex flex-col gap-3 min-h-screen p-4 font-sans transition-colors duration-300 ${
+    <div className={`flex flex-col min-h-screen font-sans transition-colors duration-300 ${
       themeMode === "dark" 
         ? "bg-zinc-900 text-white relative overflow-hidden" 
         : themeMode === "glass" 
@@ -215,78 +215,89 @@ export default function TimetableApp() {
           : "bg-white text-zinc-900 sm:bg-cover bg-[url(https://i.makeagif.com/media/1-13-2023/_3qu79.gif)]"
     }`}>
       
-       {/* particle background :- */}
+      {/* particle background */}
       {themeMode === "dark" && (
         <div key="particles" className="fixed">    
           <ParticlesBackground />
         </div>
       )}
 
-      <div className="relative z-10 flex flex-col gap-5">
-        {/* Header */}
-        <header className={`flex flex-row justify-between items-center gap-4 md:gap-0 mb-6 p-6 rounded-3xl shadow-lg border transition-all ${
-          themeMode === "dark" 
-            ? "bg-zinc-800 border-zinc-700" 
-            : themeMode === "glass" 
-              ? "bg-white/30 backdrop-blur-md border-white/20 shadow-lg"
-              : "bg-white border-gray-300"
-        }`}>
-          <img
-            className="block rounded-l-full"
-            src="https://d2lk14jtvqry1q.cloudfront.net/media/large_Chandigarh_University_Chandigarh_777cdcda4f_6764d211ac.png"
-            alt="uni"
-            width="200px"
-          />
+      {/* Fixed Header */}
+      <header className={`sticky top-0 z-20 flex flex-row justify-between items-center gap-4 p-4 shadow-lg border-b transition-all ${
+        themeMode === "dark" 
+          ? "bg-zinc-800 border-zinc-700" 
+          : themeMode === "glass" 
+            ? "bg-white/30 backdrop-blur-md border-white/20 shadow-lg"
+            : "bg-white border-gray-300"
+      }`}>
+        <img
+          className="h-12 rounded-full"
+          src="https://d2lk14jtvqry1q.cloudfront.net/media/large_Chandigarh_University_Chandigarh_777cdcda4f_6764d211ac.png"
+          alt="uni"
+        />
 
-          <div className="flex flex-col md:flex-row md:items-center gap-3">
-            <div className="text-sm md:text-base font-mono tracking-tight">
-              <div className="hidden md:block">{formatDate(currentTime)}</div>
-              <div className="md:hidden">
-                <div>{formatDateShort(currentTime)}</div>
-                <div>{formatDayName(currentTime)}</div>
-              </div>
-              <div className="flex gap-1.5">
-                <div>{formatTime(currentTime)}</div>
+        <div className="flex flex-col items-end gap-1">
+          <div className="text-sm font-mono tracking-tight">
+            <div className="hidden sm:block">{formatDateShort(currentTime)}</div>
+            <div className="sm:hidden text-xs">{formatDayName(currentTime)}</div>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <div className="text-sm">{formatTime(currentTime)}</div>
+            <button
+              onClick={toggleTheme}
+              className="p-1.5 rounded-full hover:bg-zinc-600/30 border border-transparent hover:border-zinc-500 transition"
+            >
+              {themeMode === "dark" ? (
+                <Sun className="w-3.5 h-3.5 text-yellow-300" />
+              ) : themeMode === "glass" ? (
+                <span className="w-3.5 h-3.5 text-blue-500">☁️</span>
+              ) : (
+                <Moon className="w-3.5 h-3.5 text-zinc-700" />
+              )}
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content Area with Scroll */}
+      <main className="flex-1 overflow-auto">
+        <div className="flex flex-col gap-4 p-4 relative z-10">
+          {/* Sticky Day Selector */}
+          <div className="sticky top-0 z-10 py-2 bg-opacity-90 backdrop-blur-sm"
+            style={{
+              backgroundColor: themeMode === "dark" ? 'rgba(39, 39, 42, 0.9)' : 
+                             themeMode === "glass" ? 'rgba(255, 255, 255, 0.3)' : 
+                             'rgba(255, 255, 255, 0.9)'
+            }}>
+            <div className="flex flex-wrap justify-center gap-2">
+              {days.map((day) => (
                 <button
-                  onClick={toggleTheme}
-                  className="p-2 rounded-full hover:bg-zinc-600/30 border border-transparent hover:border-zinc-500 transition"
+                  key={day}
+                  className={`h-10 w-10 px-2 py-1 rounded-full text-xs font-semibold shadow-sm hover:shadow transition-all ${
+                    selectedDay === day
+                      ? "bg-blue-500 text-white"
+                      : themeMode === "dark"
+                      ? "bg-zinc-700 border-zinc-600 text-gray-200 hover:bg-blue-700"
+                      : themeMode === "glass"
+                      ? "bg-white/40 border-white/30 text-gray-800 hover:bg-blue-100/50"
+                      : "bg-gray-200 border-gray-400 text-gray-800 hover:bg-blue-100"
+                  } border`}
+                  onClick={() => setSelectedDay(day)}
                 >
-                  {themeMode === "dark" ? (
-                    <Sun className="w-4 h-4 text-yellow-300" />
-                  ) : themeMode === "glass" ? (
-                    <span className="w-4 h-4 text-blue-500">☁️</span>
-                  ) : (
-                    <Moon className="w-4 h-4 text-zinc-700" />
-                  )}
+                  {day.slice(0, 3)}
                 </button>
-              </div>
+              ))}
             </div>
           </div>
-        </header>
 
-
-{/* Day Selector */}
-<div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 px-2 sm:px-4 ">
-  {days.map((day) => (
-    <button
-      key={day}
-      className={`h-[50px] w-[50px] sm:w-[50px] md:w-[50px] px-2 sm:px-3 py-2 rounded-full rounded-tr-md text-sm sm:text-base font-semibold shadow-sm hover:shadow transition-all ${
-        selectedDay === day
-          ? "bg-blue-400 text-white"
-          : themeMode === "dark"
-          ? "bg-zinc-700 border-zinc-600 text-gray-200 hover:bg-blue-700"
-          : themeMode === "glass"
-          ? "bg-white/40 border-white/30 text-gray-800 hover:bg-blue-100/50"
-          : "bg-gray-200 border-gray-400 text-gray-800 hover:bg-blue-100"
-      } border`}
-      onClick={() => setSelectedDay(day)}
-    >
-      {day.slice(0, 3)}
-    </button>
-  ))}
-</div>
-
-        {/* Desktop Table */}
+          {/* Desktop Table */}
+          <div className={`hidden md:block rounded-2xl shadow-md overflow-hidden border ${
+            themeMode === "dark" 
+              ? "bg-zinc-800 border-zinc-700" 
+              : themeMode === "glass"
+                ? "bg-white/30 backdrop-blur-md border-white/20"
+                : "bg-gray-50 border-gray-200"
+          }`}>
         <div className={`hidden md:block rounded-2xl shadow-md overflow-hidden border ${
           themeMode === "dark" 
             ? "bg-zinc-800 border-zinc-700" 
@@ -410,8 +421,12 @@ export default function TimetableApp() {
             </tbody>
           </table>
         </div>
+          </div>
 
-        {/* Mobile View */}
+          {/* Mobile View */}
+          <div className={`md:hidden flex flex-col divide-y gap-3 ${
+            themeMode === "dark" ? "divide-zinc-700" : "divide-gray-200"
+          }`}>
         <div className={`md:hidden flex flex-col divide-y px-5 gap-3 ${
           themeMode === "dark" ? "divide-zinc-700" : "divide-gray-200"
         }`}>
@@ -524,7 +539,9 @@ export default function TimetableApp() {
             })
           )}
         </div>
-      </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

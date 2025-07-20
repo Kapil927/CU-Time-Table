@@ -266,15 +266,15 @@ export default function TimetableApp() {
 
 
 {/* Day Selector */}
-<div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 px-2 sm:px-4 ">
+<div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-7 lg:gap-8 xl:gap-14 px-2 sm:px-4 ">
   {days.map((day) => (
     <button
       key={day}
-      className={`h-[50px] w-[50px] sm:w-[50px] md:w-[50px] px-2 sm:px-3 py-2 rounded-full rounded-tr-md text-sm sm:text-base font-semibold shadow-sm hover:shadow transition-all ${
+      className={`h-[45px] w-[44px] sm:w-[50px] md:w-[50px] px-2 sm:px-3 py-2 rounded-full rounded-tr-md text-sm sm:text-base font-semibold shadow-sm hover:shadow transition-all ${
         selectedDay === day
           ? "bg-blue-400 text-white"
           : themeMode === "dark"
-          ? "bg-zinc-700 border-zinc-600 text-gray-200 hover:bg-blue-700"
+          ? "bg-zinc-700 border-zinc-600 text-gray-200 hover:bg-blue-400"
           : themeMode === "glass"
           ? "bg-white/40 border-white/30 text-gray-800 hover:bg-blue-100/50"
           : "bg-gray-200 border-gray-400 text-gray-800 hover:bg-blue-100"

@@ -5,12 +5,12 @@ export const timeTable = {
     totalLectures: 7,
     lectures: [
       {
-        subject: "Operating System",
-        subjectCode: "23CST-303",
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
         from: "09:30 AM",
         till: "10:20 AM",
-        instructor: "Prashant Ahluwalia",
-        eid: "E5026",
+        instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -49,12 +49,12 @@ export const timeTable = {
         roomNo: "905"
       },
       {
-        subject: "Project Based Learning in Java",
-        subjectCode: "23CSH-304",
+        subject: "Operating System",
+        subjectCode: "23CST-303",
         from: "01:55 PM",
         till: "02:45 PM",
-        instructor: "Kusum Lata",
-        eid: "E17456",
+        instructor: "Prashant Ahluwalia",
+        eid: "E5026",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -88,34 +88,34 @@ export const timeTable = {
     totalLectures: 7,
     lectures: [
       {
-        subject: "Competitive Coding-I",
-        subjectCode: "23CSP-332",
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
         from: "09:30 AM",
         till: "10:20 AM",
-        instructor: "Vishal Kumar",
-        eid: "E18147",
+        instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Practical",
         blockNo: "B4",
-        roomNo: "912"
+        roomNo: "918"
       },
       {
-        subject: "Competitive Coding-I",
-        subjectCode: "23CSP-332",
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
         from: "10:20 AM",
         till: "11:10 AM",
-        instructor: "Vishal Kumar",
-        eid: "E18147",
+        instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Practical",
         blockNo: "B4",
-        roomNo: "912"
+        roomNo: "918"
       },
       {
-        subject: "Design and Analysis of Algorithms",
-        subjectCode: "23CSH-301",
+        subject: "Computer Networks",
+        subjectCode: "23CST-302",
         from: "11:20 AM",
         till: "12:10 PM",
-        instructor: "Ameena Nazz",
-        eid: "E13481",
+        instructor: "Ankita Sharma",
+        eid: "E6204",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -132,12 +132,12 @@ export const timeTable = {
         roomNo: "908"
       },
       {
-        subject: "Project Based Learning in Java",
-        subjectCode: "23CSH-304",
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
         from: "01:55 PM",
         till: "02:45 PM",
-        instructor: "Kusum Lata",
-        eid: "E17456",
+        instructor: "Ameena Nazz",
+        eid: "E13481",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -168,7 +168,7 @@ export const timeTable = {
   },
 
   Wednesday: {
-    totalLectures: 5,
+    totalLectures: 6,
     lectures: [
       {
         subject: "Full Stack-I",
@@ -204,6 +204,28 @@ export const timeTable = {
         roomNo: "908"
       },
       {
+        subject: "Soft Skills-III",
+        subjectCode: "23TDP-311",
+        from: "01:05 PM",
+        till: "01:55 PM",
+        instructor: "Amit Sharma",
+        eid: "E18718",
+        type: "Practical",
+        blockNo: "B4",
+        roomNo: "905-A"
+      },
+      {
+        subject: "Soft Skills-III",
+        subjectCode: "23TDP-311",
+        from: "01:55 PM",
+        till: "02:45 PM",
+        instructor: "Amit Sharma",
+        eid: "E18718",
+        type: "Practical",
+        blockNo: "B4",
+        roomNo: "905-A"
+      },
+      {
         subject: "Computer Networks",
         subjectCode: "23CST-302",
         from: "02:45 PM",
@@ -213,45 +235,34 @@ export const timeTable = {
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
-      },
-      {
-        subject: "Design and Analysis of Algorithms",
-        subjectCode: "23CSH-301",
-        from: "03:35 PM",
-        till: "04:25 PM",
-        instructor: "Ameena Nazz",
-        eid: "E13481",
-        type: "Lecture",
-        blockNo: "B4",
-        roomNo: "908"
       }
     ]
   },
 
   Thursday: {
-    totalLectures: 7,
+    totalLectures: 6,
     lectures: [
       {
-        subject: "Soft Skills-III",
-        subjectCode: "23TDP-311",
+        subject: "Competitive Coding-I",
+        subjectCode: "23CSP-332",
         from: "09:30 AM",
         till: "10:20 AM",
-        instructor: "Amit Sharma",
-        eid: "E18718",
+        instructor: "Vishal Kumar",
+        eid: "E18147",
         type: "Practical",
         blockNo: "B4",
-        roomNo: "705"
+        roomNo: "918"
       },
       {
-        subject: "Soft Skills-III",
-        subjectCode: "23TDP-311",
+        subject: "Competitive Coding-I",
+        subjectCode: "23CSP-332",
         from: "10:20 AM",
         till: "11:10 AM",
-        instructor: "Amit Sharma",
-        eid: "E18718",
+        instructor: "Vishal Kumar",
+        eid: "E18147",
         type: "Practical",
         blockNo: "B4",
-        roomNo: "705"
+        roomNo: "918"
       },
       {
         subject: "Full Stack-I",
@@ -262,7 +273,7 @@ export const timeTable = {
         eid: "E18387",
         type: "Practical",
         blockNo: "B4",
-        roomNo: "912-A"
+        roomNo: "918"
       },
       {
         subject: "Full Stack-I",
@@ -273,40 +284,29 @@ export const timeTable = {
         eid: "E18387",
         type: "Practical",
         blockNo: "B4",
-        roomNo: "912-A"
+        roomNo: "918"
       },
       {
-        subject: "Computer Networks",
-        subjectCode: "23CST-302",
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
         from: "01:55 PM",
         till: "02:45 PM",
-        instructor: "Ankita Sharma",
-        eid: "E6204",
+        instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
       },
       {
-        subject: "Project Based Learning in Java",
-        subjectCode: "23CSH-304",
+        subject: "Computer Networks",
+        subjectCode: "23CST-302",
         from: "02:45 PM",
         till: "03:35 PM",
-        instructor: "Kusum Lata",
-        eid: "E17456",
-        type: "Practical",
+        instructor: "Ankita Sharma",
+        eid: "E6204",
+        type: "Lecture",
         blockNo: "B4",
-        roomNo: "918"
-      },
-      {
-        subject: "Project Based Learning in Java",
-        subjectCode: "23CSH-304",
-        from: "03:35 PM",
-        till: "04:25 PM",
-        instructor: "Kusum Lata",
-        eid: "E17456",
-        type: "Practical",
-        blockNo: "B4",
-        roomNo: "918"
+        roomNo: "908"
       }
     ]
   },
@@ -337,12 +337,12 @@ export const timeTable = {
         roomNo: "705"
       },
       {
-        subject: "Computer Networks",
-        subjectCode: "23CST-302",
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
         from: "11:20 AM",
         till: "12:10 PM",
-        instructor: "Ankita Sharma",
-        eid: "E6204",
+        instructor: "Ameena Nazz",
+        eid: "E13481",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"

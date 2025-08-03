@@ -5,23 +5,23 @@ export const timeTable = {
     totalLectures: 7,
     lectures: [
       {
-        subject: "Project Based Learning in Java",
-        subjectCode: "23CSH-304",
+        subject: "Computer Networks",
+        subjectCode: "23CST-302",
         from: "09:30 AM",
         till: "10:20 AM",
-        instructor: "Kusum Lata",
-        eid: "E17456",
+        instructor: "Ankita Sharma",
+        eid: "E6204",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
       },
       {
-        subject: "Design and Analysis of Algorithms",
-        subjectCode: "23CSH-301",
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
         from: "10:20 AM",
         till: "11:10 AM",
-        instructor: "Ameena Nazz",
-        eid: "E13481",
+        instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -168,7 +168,7 @@ export const timeTable = {
   },
 
   Wednesday: {
-    totalLectures: 6,
+    totalLectures: 7,
     lectures: [
       {
         subject: "Full Stack-I",
@@ -226,12 +226,23 @@ export const timeTable = {
         roomNo: "905-A"
       },
       {
-        subject: "Computer Networks",
-        subjectCode: "23CST-302",
+        subject: "Design and Analysis of Algorithms",
+        subjectCode: "23CSH-301",
         from: "02:45 PM",
         till: "03:35 PM",
-        instructor: "Ankita Sharma",
-        eid: "E6204",
+        instructor: "Ameena Nazz",
+        eid: "E13481",
+        type: "Lecture",
+        blockNo: "B4",
+        roomNo: "908"
+      },
+      {
+        subject: "Project Based Learning in Java",
+        subjectCode: "23CSH-304",
+        from: "03:35 PM",
+        till: "04:25 PM",
+        instructor: "Kusum Lata",
+        eid: "E17456",
         type: "Lecture",
         blockNo: "B4",
         roomNo: "908"
@@ -240,7 +251,7 @@ export const timeTable = {
   },
 
   Thursday: {
-    totalLectures: 6,
+    totalLectures: 5,
     lectures: [
       {
         subject: "Competitive Coding-I",
@@ -287,21 +298,10 @@ export const timeTable = {
         roomNo: "918"
       },
       {
-        subject: "Project Based Learning in Java",
-        subjectCode: "23CSH-304",
-        from: "01:55 PM",
-        till: "02:45 PM",
-        instructor: "Kusum Lata",
-        eid: "E17456",
-        type: "Lecture",
-        blockNo: "B4",
-        roomNo: "908"
-      },
-      {
         subject: "Computer Networks",
         subjectCode: "23CST-302",
-        from: "02:45 PM",
-        till: "03:35 PM",
+        from: "01:55 PM",
+        till: "02:45 PM",
         instructor: "Ankita Sharma",
         eid: "E6204",
         type: "Lecture",
@@ -416,3 +416,4 @@ export const timeTable = {
     lectures: []
   }
 };
+
